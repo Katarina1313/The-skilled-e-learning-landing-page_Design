@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #83869a;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+.container {
+  margin: 16px;
+}
+
+h1,
+h3 {
+  color: #13183f;
+  font-weight: 800;
+}
+
+h2 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+}
+h1 {
+  color: #13183f;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50.4px;
+}
+p {
+  color: #83869a;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Header Section */
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+header p {
+  margin: 26px 0;
+}
+
+.main-hero {
+  width: 100%;
+  margin-top: 46px;
+}
+
+/* Buttons Section*/
+
+button {
+  border: none;
+  border-radius: 28px;
+  padding: 11px 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dark-btn {
+  background: #13183f;
+  color: #ffffff;
+}
+.dark-btn:hover {
+  background: #666ca3;
+}
+
+.colored-btn {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  color: #ffffff;
+  border-radius: 31.5px;
+  line-height: 26px;
+  padding: 15px 38px;
+}
+.colored-btn:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+.footer-colored-btn {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  color: #ffffff;
+  border-radius: 28px;
+}
+
+.footer-colored-btn:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+
+/*Main Section */
+.main-header-box {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  border-radius: 10px;
+  padding: 24px 29px 32px 28px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.card {
+  padding: 56px 29px 32px 28px;
+  margin-top: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 10px;
+  position: relative;
+}
+.card p {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  color: #13183f;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25.2px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(150% -150%);
+  margin-left: 40px;
+  margin-top: -30px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 18px;
+  line-height: 28px;
+  color: #f74780;
+}
+
+/*Footer Section*/
+
+footer {
+  background: #13183f;
+  display: flex;
+  justify-content: space-between;
+  /*width: 375px;
+  height: 120px;*/
+  padding: 43px 16px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(./starter-code/assets/image-hero-tablet.png),
+      linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -100px right -300px, top right;
+  }
+  .main-hero {
+    display: none;
+  }
+  .header-description {
+    width: 393px;
+    margin-top: 105px;
+  }
+  header {
+    margin-bottom: 210px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 86px;
+  }
+  .main-header-box {
+    width: 339px;
+    height: 260px;
+    padding-top: 56px;
+    margin-left: -3px;
+    margin-top: 38px;
+  }
+  .main-header-box h2 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .card {
+    width: 339px;
+    height: 259px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(./starter-code/assets/image-hero-desktop.png),
+      linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -150px right -330px, top right;
+  }
+  .header {
+    margin-bottom: 350px;
+  }
+  .header-description {
+    margin-top: 185px;
+  }
+  .container {
+    margin: 24px 165px;
+  }
+  main {
+    margin-bottom: 140px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 322px 322px;
+  }
+
+  .card {
+    /*padding: 64px 32px 40px 32px;*/
+    width: 350px;
+    height: 322px;
+  }
+  .main-header-box {
+    width: 350px;
+    height: 322px;
+  }
+  .main-header-box h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    padding: -15px 44px 32px 100px;
+  }
+}
